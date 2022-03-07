@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas 6 Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="box">
+      <form id="formulir">
+        <h1 align="center">Kalkulator Sederhana</h1>
+        <div class="kolom-input">
+          <label for="a1">Angka 1</label>
+          <input type="text" name="a1" id="a1" value="" />
+        </div>
+        <div class="kolom-input">
+          <label for="a2">Angka 2</label>
+          <input type="text" name="a2" id="a2" value="" />
+        </div>
+        <div class="kolom-input">
+          <label for="hasil">Hasil</label>
+          <input type="text" name="hasil" id="hasil" disabled />
+        </div>
+        <div class="kolom-button" align="center" >
+          <input type="button" name="tambah" value="+" onclick="(new hitung()).tambah();" />
+          <input type="button" name="kurang" value="-" onclick="(new hitung()).kurang();" />
+          <input type="button" name="kali" value="x" onclick="(new hitung()).kali();" />
+          <input type="button" name="bagi" value="/" onclick="(new hitung()).bagi();" />
+          <input type="button" name="pangkat" value="^" onclick="(new hitung()).pangkat();" />
+          <input type="button" name="batal" value="Batal" onclick="(new hitung()).kosong();" />
+        </div>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
