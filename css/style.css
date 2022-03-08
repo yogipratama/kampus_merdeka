@@ -1,0 +1,22 @@
+.styling-table {
+  border-collapse: collapse;
+  font-size: 12pt;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(183, 194, 185, 0.15);
+  align-items: center;
+  background-color: aqua;
+  margin-top: 40px;
+}
+
+thead {
+  background-color: rgb(65, 224, 150);
+}
+
+:root {
+  background-color: rgb(233, 233, 233);
+  font-size: 12pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  text-align: center;
+}
