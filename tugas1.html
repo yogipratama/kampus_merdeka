@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tugas Soal No 1</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+      $('document').ready(function() {
+        $('div.ayam').click(function() {
+          $('<audio></audio>').attr({
+            'src': 'audio/ayam.mp3',
+            'volume': 0.4,
+            'autoplay': 'autoplay',
+          }).appendTo('body');
+          $(this).css({
+            background: "url('images/ayam.jpg')"
+          });
+        });
+        $('div.anjing').click(function() {
+          $('<audio></audio>').attr({
+            'src': 'audio/anjing.mp3',
+            'volume': 0.4,
+            'autoplay': 'autoplay',
+          }).appendTo('body');
+          $(this).css({
+            background: "url('images/anjing.jpg')"
+          });
+        });
+        $('div.kucing').click(function() {
+          $('<audio></audio>').attr({
+            'src': 'audio/kucing.mp3',
+            'volume': 0.4,
+            'autoplay': 'autoplay',
+          }).appendTo('body');
+          $(this).css({
+            background: "url('images/kucing.jpg')"
+          });
+        });
+        $('div.nyamuk').click(function() {
+          $('<audio></audio>').attr({
+            'src': 'audio/nyamuk.mp3',
+            'volume': 0.4,
+            'autoplay': 'autoplay',
+          }).appendTo('body');
+          $(this).css({
+            background: "url('images/nyamuk.jpg')"
+          });
+        });
+      });
+    </script>
+    <style>
+      div {
+        background: greenyellow;
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 60px;
+        cursor: pointer;
+      }
+      p {
+        margin-top: 205px;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Klik box untuk mendengarkan suara hewan tersebut</h1>
+    <div class="ayam">
+      <p>Gambar Ayam</p>
+    </div>
+    <div class="anjing">
+      <p>Gambar Anjing</p>
+    </div>
+    <div class="kucing">
+      <p>Gambar Kucing</p>
+    </div>
+    <div class="nyamuk">
+      <p>Gambar Nyamuk</p>
+    </div>
+  </body>
+</html>
