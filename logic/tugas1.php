@@ -38,7 +38,7 @@ if ($status == 'Sudah' && $jumlahAnak > 0 && $jumlahAnak <= 2) {
 
 $gajiKotor = $gajiPokok + $tunjanganJabatan + $tunjanganKeluarga;
 
-$zakatPenghasilan = ($agama == 'Islam' && $gajiKotor >= 6_000_000) ? 0.25 * $gajiKotor : 0;
+$zakatPenghasilan = ($agama == 'Islam' && $gajiKotor >= 6_000_000) ? 0.025 * $gajiKotor : 0;
 
 $gajiBersih = $gajiKotor - $zakatPenghasilan;
 
