@@ -24,9 +24,15 @@
     function cekLogin($username, $password) {
       if ($username == 'admin' && $password == 'mimin') {
         header('Location: /home.php');
-        exit();
+        exit;
       }
-      
+      echo "<script>
+              alert('username dan password salah!');
+              history.go(-1);
+            </script>";
+    }
+    if (isset($button)) {
+      cekLogin($username, $password);
     }
     
   ?>
@@ -48,7 +54,7 @@
                 <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password" required>
               </div>
               <div class="mb-3">
-                <input type="submit" class="btn btn-primary w-100 mt-4" name="login" value="Submit<?= cekLogin($username, $password) ?>">
+                <input type="submit" class="btn btn-primary w-100 mt-4" name="login" value="Submit" onclick="<?= cekLogin($username, $password) ?>">
 
               </div>
             </div>
